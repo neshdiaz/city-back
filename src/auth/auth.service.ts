@@ -15,7 +15,7 @@ export class AuthService {
   }
     
   async createSession(): Promise<{}> {
-    const token =  await this.getRequestToken()
+    const token: {} =  await this.getRequestToken()
     console.log(token)
 
     return token
